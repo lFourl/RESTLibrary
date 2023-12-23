@@ -1,6 +1,6 @@
 # RESTLibrary
 
-This repository is a Dockerized RESTful API application in Go for a simple bookshelf.
+This repository is a Dockerized RESTful API application in Go for a simple book library.
 
 ## Includes
 
