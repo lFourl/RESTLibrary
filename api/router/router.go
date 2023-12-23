@@ -6,15 +6,16 @@ import (
 
 	"RESTLibrary/api/resource/book"
 	"RESTLibrary/api/resource/health"
+	"github.com/go-playground/validator/v10"
 )
 
-func New(db *gorm.DB) *chi.Mux {
+func New(db *gorm.DB, v *validator.Validate) *chi.Mux {
 	r := chi.NewRouter()
 
 	r.Get("/livez", health.Read)
 
 	r.Route("/v1", func(r chi.Router) {
-		bookAPI := book.New(db)
+		bookAPI := book.New(db, v)
 		r.Get("/books", bookAPI.List)
 		r.Post("/books", bookAPI.Create)
 		r.Get("/books/{id}", bookAPI.Read)
