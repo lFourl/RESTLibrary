@@ -22,4 +22,4 @@ This repository is a Dockerized RESTful API application in Go for a simple book 
 | Update Book | PUT         | /v1/books/{id} |
 | Delete Book | DELETE      | /v1/books/{id} |
 
-<span style="color:yellow">UI Coming Soon...</span>
+<span style="color:red">UI Coming Soon...</span>
