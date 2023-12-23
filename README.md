@@ -21,3 +21,5 @@ This repository is a Dockerized RESTful API application in Go for a simple book 
 | Read Book   | GET         | /v1/books/{id} |
 | Update Book | PUT         | /v1/books/{id} |
 | Delete Book | DELETE      | /v1/books/{id} |
+
+UI Coming Soon...
